@@ -1,0 +1,23 @@
+buildscript {
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
+
+    group = 'ch.swisssign.ra'
+    version = '0.0.1-SNAPSHOT'
+
+    ext {
+        springBootVersion = '3.3.5'
+        springDependencyManagementPluginVersion = '1.1.6'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+java {
+    sourceCompatibility = '21'
+}
